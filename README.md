@@ -1,7 +1,7 @@
 # Real-Time-Continuous-FIR-filtering
 FIR filtering using circular buffer.
 
-For real time signal processing applications with higher sampling interval or lower frequency, the FIR filtering process is carried out sequentially on the received stream of inputs. Thus if a sequential block of memory is utilized, the newest incoming element is added to the end. To make the convolution operation efficient, while implementing the filtering algorithm, the data is stored in a wrap-around fashion and is accessed iteratively with the help of a pointer which first points at the newest sample followed by the immediate older sample. This functionality has been implemented in the code provided above.
+For real time signal processing applications with higher sampling interval or lower frequency, the FIR filtering process is carried out sequentially on the received stream of inputs. If a sequential block of memory is utilized, the newest incoming element is added to the end. To make the convolution operation efficient, while implementing the filtering algorithm, the data is stored in a wrap-around fashion and is accessed iteratively with the help of a pointer which first points at the newest sample followed by the immediate older sample and so on. This functionality has been implemented in the code provided above.
 
 
 For reference, 
